@@ -1,0 +1,24 @@
+.getit {
+
+  width: 100%;
+
+  &__download {
+    width: 310px;
+    font-size: 14px;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid $ppPink;
+    background: transparent;
+    padding: 16px 20px;
+    color: $ppPink;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s;
+    &:hover {
+      background-color: $ppPink;
+      color: #fff;
+    }
+  }
+
+}

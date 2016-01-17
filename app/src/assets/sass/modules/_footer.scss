@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  background: $ppGreen;
+  padding: 10px;
+  font-size: 13px;
+  color: #fff;
+  text-align: right;
+
+  a {
+    color: #fff;
+    &:hover {
+      color: lighten($ppGreen, 15%);
+    }
+  }
+}

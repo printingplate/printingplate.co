@@ -4,5 +4,66 @@ block vars
 	- var bodyClass = 'home'
 
 block content
-	.container
-		h1 welcome
+
+	.intro
+		.container
+
+			header.header
+				+svg('printingplate-logo','','page__logo')
+				h1 Printing Plate
+				h2 Sanitized WordPress development
+
+
+			ul.benefits
+
+				li.benefits__item
+					+svg('icon-db','','benefits__icon')
+					span.benefits__itemContent Build professional WordPress applications in a modern PHP framework architecture
+				li.benefits__item
+					+svg('icon-smile','','benefits__icon')
+					span.benefits__itemContent Lightweight, easy to understand and easy to implement
+				li.benefits__item
+					+svg('icon-tools','','benefits__icon')
+					span.benefits__itemContent Comes with your favorite development tools such as Gulp, Composer and WP-CLI
+
+			.getit
+				a.getit__download(href='http://github.com/printingplate/printingplate') Get it from Github
+
+	.qna
+		.container
+			.qna__content
+
+				.qna__item
+					h3.qna__title Who should use PrintingPlate?
+					.qna__answer
+						p PrintingPlate is designed for developers who want/have to build an application using WordPress, and aren't particularly fan of the way it is structured.
+
+				.qna__item
+					h3.qna__title Why is this better than just using WordPress as it is?
+					.qna__answer
+						p PrintingPlate does a few things very well:
+						ul
+							li It loads WordPress as a separate package through composer
+							li It uses a more conventional directory structure, allowing for a clean and obvious setup
+							li It's deploy-tool-ready (Capistrano, Envoyer, etc.)
+							li Config information and DB credentials are securily handled through dotenv
+
+						p These are all factors that will help you keep your WordPress application clean, manageable and secure.
+
+				.qna__item
+					h3.qna__title Why doesn't PrintingPlate do <em>&lt;enter functionality&gt;</em>?
+
+					.qna__answer
+						p We aim to keep PrintingPlate lightweight and versatile. You can easily add any tools you like for your specific workflow or deploy strategy.
+
+	footer.footer
+		.container
+			| PrintingPlate is created by 
+			a(href='http://www.superinteractive.com')
+				| Super Interactive
+			&nbsp; in Amsterdam
+
+
+
+
+

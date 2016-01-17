@@ -1,0 +1,28 @@
+.benefits {
+  
+    margin: 20px auto;
+    width: 100%;
+    overflow: hidden;
+    
+    padding: 0;
+
+    &__item {
+      width: 30%;
+      float: left;
+      text-align: center;
+      list-style: none;
+      padding: 1.5%;
+      color: #4A4A4A;
+      margin: 0 0 20px 0;
+    }
+
+    &__icon {
+      width: 60px;
+    }
+
+    &__itemContent {
+      padding: 20px;
+      display: block;
+    }
+
+}

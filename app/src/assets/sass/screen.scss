@@ -4,6 +4,7 @@
 @import 'susy';
 
 // Variables
+@import 'Variables/colors';
 
 // Mixins
 
@@ -12,5 +13,11 @@
 @import 'base/base';
 
 // Modules
+@import 'modules/intro';
+@import 'modules/header';
+@import 'modules/benefits';
+@import 'modules/qna';
+@import 'modules/getit';
+@import 'modules/footer';
 
 // State
